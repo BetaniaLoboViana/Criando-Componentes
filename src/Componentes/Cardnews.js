@@ -22,7 +22,7 @@ class Cardnews extends HTMLElement {
       linkTitle.href = this.getAttribute("link-url");
   
       const newsContent = document.createElement("p");
-      newsContent.textContent = this.getAttribute("contet");
+      newsContent.textContent = this.getAttribute("content");
   
       cardLeft.appendChild(autor);
       cardLeft.appendChild(linkTitle);
@@ -32,7 +32,7 @@ class Cardnews extends HTMLElement {
       cardRight.setAttribute("class", "card__right");
   
       const newsImage = document.createElement("img");
-      newsImage.src = this.getAttribute("photo") || "assets/foto-default.jpg";
+      newsImage.src = this.getAttribute("photo") || "assets/default.jpg";
       newsImage.alt = "Foto da Noticia";
       cardRight.appendChild(newsImage);
   
